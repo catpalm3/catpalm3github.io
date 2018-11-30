@@ -1,0 +1,76 @@
+CSS only
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+JS, Popper.js, and jQuery
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+body{
+  background-color: #ececec;
+  height: 100%;
+  margin: 0;
+  height: 0;
+}
+
+.site-entire{
+  min-height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  max-width: $content-width;
+}
+
+.small-wrapper {
+  margin: 0 auto;
+  max-width: $tighter-width;
+}
+
+.page-content {
+  position: relative;
+  padding-bottom:2em;
+  ul {
+    right: -10px;
+    list-style-type: none;
+  }
+}
+
+#main{
+  max-width:1080px;
+  position: relative;
+  margin: auto; 
+}
+h1 {
+    color: red;
+}
+p {
+    color: red;
+}
+.page-content {
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.blog-banner-image {
+  width: 99%;
+  position: relative;
+  padding: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 90%;
+    background-color: $LightGold;
+    opacity: 0.5;
+    padding: 0;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+  }
+  img {
+    border: 1px solid #444;
+    width: 100%;
+    height: 100%;
+  }
